@@ -3,8 +3,24 @@
     <repository>
       <include>true</include>
       <metadata>
-        <id>central</id>
-        <url>https://repo.maven.apache.org/maven2</url>
+        <id>nexus</id>
+        <url>http://pandora:8081/content/groups/public</url>
+        <source>SETTINGS</source>
+      </metadata>
+    </repository>
+    <repository>
+      <include>true</include>
+      <metadata>
+        <id>local</id>
+        <url>/opt/prodaxis/devati30/.m2/repository</url>
+        <source>LOCAL</source>
+      </metadata>
+    </repository>
+    <repository>
+      <include>true</include>
+      <metadata>
+        <id>external</id>
+        <url>https://repo1.maven.org/maven2/</url>
         <source>PROJECT</source>
       </metadata>
     </repository>
