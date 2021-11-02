@@ -6,13 +6,94 @@ package com.prodaxis.bpmn;
 
 public class QuestionAnswerParam implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
-    public static final java.lang.String LABEL_MAPPING_CLASS = "";
+	static final long serialVersionUID = 1L;
+	public static final java.lang.String LABEL_MAPPING_CLASS = "";
 
-    public QuestionAnswerParam() {
-    }
+	@org.kie.api.definition.type.Label(value = "Type d’usage du caisson hyperbare")
+	private java.lang.String typeOfUse;
+	@org.kie.api.definition.type.Label(value = "Mode d’utilisation")
+	private java.lang.String howToUse;
+	@org.kie.api.definition.type.Label(value = "Diamètre du caisson")
+	private java.lang.Integer saseDiameter;
+	@org.kie.api.definition.type.Label(value = "Debit")
+	private java.lang.Integer debit;
+	@org.kie.api.definition.type.Label(value = "Nombre d’usages prévus par an ")
+	private java.lang.Integer numberOfUses;
+	@org.kie.api.definition.type.Label(value = "La quantité de caissons nécessaires ")
+	private java.lang.Integer askedQuantity;
+	@org.kie.api.definition.type.Label(value = "Date demandée ")
+	private java.util.Date customerRequestDate;
 
+	public QuestionAnswerParam() {
+	}
 
+	public java.lang.String getTypeOfUse() {
+		return this.typeOfUse;
+	}
 
+	public void setTypeOfUse(java.lang.String typeOfUse) {
+		this.typeOfUse = typeOfUse;
+	}
+
+	public java.lang.String getHowToUse() {
+		return this.howToUse;
+	}
+
+	public void setHowToUse(java.lang.String howToUse) {
+		this.howToUse = howToUse;
+	}
+
+	public java.lang.Integer getSaseDiameter() {
+		return this.saseDiameter;
+	}
+
+	public void setSaseDiameter(java.lang.Integer saseDiameter) {
+		this.saseDiameter = saseDiameter;
+	}
+
+	public java.lang.Integer getDebit() {
+		return this.debit;
+	}
+
+	public void setDebit(java.lang.Integer debit) {
+		this.debit = debit;
+	}
+
+	public java.lang.Integer getNumberOfUses() {
+		return this.numberOfUses;
+	}
+
+	public void setNumberOfUses(java.lang.Integer numberOfUses) {
+		this.numberOfUses = numberOfUses;
+	}
+
+	public java.lang.Integer getAskedQuantity() {
+		return this.askedQuantity;
+	}
+
+	public void setAskedQuantity(java.lang.Integer askedQuantity) {
+		this.askedQuantity = askedQuantity;
+	}
+
+	public java.util.Date getCustomerRequestDate() {
+		return this.customerRequestDate;
+	}
+
+	public void setCustomerRequestDate(java.util.Date customerRequestDate) {
+		this.customerRequestDate = customerRequestDate;
+	}
+
+	public QuestionAnswerParam(java.lang.String typeOfUse,
+			java.lang.String howToUse, java.lang.Integer saseDiameter,
+			java.lang.Integer debit, java.lang.Integer numberOfUses,
+			java.lang.Integer askedQuantity, java.util.Date customerRequestDate) {
+		this.typeOfUse = typeOfUse;
+		this.howToUse = howToUse;
+		this.saseDiameter = saseDiameter;
+		this.debit = debit;
+		this.numberOfUses = numberOfUses;
+		this.askedQuantity = askedQuantity;
+		this.customerRequestDate = customerRequestDate;
+	}
 
 }
