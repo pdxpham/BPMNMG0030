@@ -1,0 +1,1 @@
+{"id":"7120df75-2abe-442b-8d05-5392b63d5960","name":"question2_subform","model":{"source":"INTERNAL","className":"SubFormModel","name":"SubFormModel","properties":[],"formModelType":"org.kie.workbench.common.forms.data.modeller.model.DataObjectFormModel"},"fields":[],"layoutTemplate":{"version":3,"style":"FLUID","layoutProperties":{},"rows":[]}}
