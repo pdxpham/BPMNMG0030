@@ -9,20 +9,29 @@ public class QuestionAnswerParam implements java.io.Serializable {
 	static final long serialVersionUID = 1L;
 	public static final java.lang.String LABEL_MAPPING_CLASS = "";
 
-	@org.kie.api.definition.type.Label(value = "Type d’usage du caisson hyperbare")
+	@org.kie.api.definition.type.Label("Type d’usage du caisson hyperbare")
 	private java.lang.String typeOfUse;
-	@org.kie.api.definition.type.Label(value = "Mode d’utilisation")
+	@org.kie.api.definition.type.Label("Mode d’utilisation")
 	private java.lang.String howToUse;
-	@org.kie.api.definition.type.Label(value = "Diamètre du caisson")
-	private java.lang.Integer saseDiameter;
-	@org.kie.api.definition.type.Label(value = "Debit")
+	@org.kie.api.definition.type.Label("Debit")
 	private java.lang.Integer debit;
-	@org.kie.api.definition.type.Label(value = "Nombre d’usages prévus par an ")
+	@org.kie.api.definition.type.Label("Nombre d’usages prévus par an ")
 	private java.lang.Integer numberOfUses;
-	@org.kie.api.definition.type.Label(value = "La quantité de caissons nécessaires ")
+	@org.kie.api.definition.type.Label("La quantité de caissons nécessaires ")
 	private java.lang.Integer askedQuantity;
-	@org.kie.api.definition.type.Label(value = "Date demandée ")
+	@org.kie.api.definition.type.Label("Date demandée ")
 	private java.util.Date customerRequestDate;
+
+	@org.kie.api.definition.type.Label(value = "Diamètre du caisson")
+	private java.lang.Integer diameter;
+	@org.kie.api.definition.type.Label(value = "Numéro de contrat client")
+	private java.lang.String salesContractId;
+	@org.kie.api.definition.type.Label(value = "Code client vente ")
+	private java.lang.String soldToCustomerId;
+	@org.kie.api.definition.type.Label(value = "Code client livré ")
+	private java.lang.String shipToCustomerId;
+	@org.kie.api.definition.type.Label(value = "Numéro d’affaire ")
+	private java.lang.String projectId;
 
 	public QuestionAnswerParam() {
 	}
@@ -41,14 +50,6 @@ public class QuestionAnswerParam implements java.io.Serializable {
 
 	public void setHowToUse(java.lang.String howToUse) {
 		this.howToUse = howToUse;
-	}
-
-	public java.lang.Integer getSaseDiameter() {
-		return this.saseDiameter;
-	}
-
-	public void setSaseDiameter(java.lang.Integer saseDiameter) {
-		this.saseDiameter = saseDiameter;
 	}
 
 	public java.lang.Integer getDebit() {
@@ -83,17 +84,64 @@ public class QuestionAnswerParam implements java.io.Serializable {
 		this.customerRequestDate = customerRequestDate;
 	}
 
+	public java.lang.Integer getDiameter() {
+		return this.diameter;
+	}
+
+	public void setDiameter(java.lang.Integer diameter) {
+		this.diameter = diameter;
+	}
+
+	public java.lang.String getSalesContractId() {
+		return this.salesContractId;
+	}
+
+	public void setSalesContractId(java.lang.String salesContractId) {
+		this.salesContractId = salesContractId;
+	}
+
+	public java.lang.String getSoldToCustomerId() {
+		return this.soldToCustomerId;
+	}
+
+	public void setSoldToCustomerId(java.lang.String soldToCustomerId) {
+		this.soldToCustomerId = soldToCustomerId;
+	}
+
+	public java.lang.String getShipToCustomerId() {
+		return this.shipToCustomerId;
+	}
+
+	public void setShipToCustomerId(java.lang.String shipToCustomerId) {
+		this.shipToCustomerId = shipToCustomerId;
+	}
+
+	public java.lang.String getProjectId() {
+		return this.projectId;
+	}
+
+	public void setProjectId(java.lang.String projectId) {
+		this.projectId = projectId;
+	}
+
 	public QuestionAnswerParam(java.lang.String typeOfUse,
-			java.lang.String howToUse, java.lang.Integer saseDiameter,
-			java.lang.Integer debit, java.lang.Integer numberOfUses,
-			java.lang.Integer askedQuantity, java.util.Date customerRequestDate) {
+			java.lang.String howToUse, java.lang.Integer debit,
+			java.lang.Integer numberOfUses, java.lang.Integer askedQuantity,
+			java.util.Date customerRequestDate, java.lang.Integer diameter,
+			java.lang.String salesContractId,
+			java.lang.String soldToCustomerId,
+			java.lang.String shipToCustomerId, java.lang.String projectId) {
 		this.typeOfUse = typeOfUse;
 		this.howToUse = howToUse;
-		this.saseDiameter = saseDiameter;
 		this.debit = debit;
 		this.numberOfUses = numberOfUses;
 		this.askedQuantity = askedQuantity;
 		this.customerRequestDate = customerRequestDate;
+		this.diameter = diameter;
+		this.salesContractId = salesContractId;
+		this.soldToCustomerId = soldToCustomerId;
+		this.shipToCustomerId = shipToCustomerId;
+		this.projectId = projectId;
 	}
 
 }
