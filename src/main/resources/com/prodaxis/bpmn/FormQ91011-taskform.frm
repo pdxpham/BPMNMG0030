@@ -1,0 +1,1 @@
+{"id":"01cb1f0c-c85d-4232-a041-01315648c1b5","name":"FormQ91011-taskform.frm","model":{"taskName":"FormQ91011","processId":"BPMNMG0030-Configurateurdeproduitsplusieursetapes.Process","properties":[],"formModelType":"org.kie.workbench.common.forms.jbpm.model.authoring.task.TaskFormModel"},"fields":[],"layoutTemplate":{"version":3,"style":"FLUID","layoutProperties":{},"rows":[]}}
