@@ -1,0 +1,1 @@
+{"id":"bbd75803-9a85-43e6-b4bb-92457fe72f82","name":"FormQ345A-taskform.frm","model":{"taskName":"FormQ345A","processId":"BPMNMG0030-Configurateurdeproduitsplusieursetapes.Process","properties":[],"formModelType":"org.kie.workbench.common.forms.jbpm.model.authoring.task.TaskFormModel"},"fields":[],"layoutTemplate":{"version":3,"style":"FLUID","layoutProperties":{},"rows":[]}}
