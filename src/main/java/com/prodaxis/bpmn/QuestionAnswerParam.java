@@ -22,16 +22,19 @@ public class QuestionAnswerParam implements java.io.Serializable {
 	@org.kie.api.definition.type.Label("Date demandée ")
 	private java.util.Date customerRequestDate;
 
-	@org.kie.api.definition.type.Label(value = "Diamètre du caisson")
+	@org.kie.api.definition.type.Label("Diamètre du caisson")
 	private java.lang.Integer diameter;
-	@org.kie.api.definition.type.Label(value = "Numéro de contrat client")
+	@org.kie.api.definition.type.Label("Numéro de contrat client")
 	private java.lang.String salesContractId;
-	@org.kie.api.definition.type.Label(value = "Code client vente ")
+	@org.kie.api.definition.type.Label("Code client vente ")
 	private java.lang.String soldToCustomerId;
-	@org.kie.api.definition.type.Label(value = "Code client livré ")
+	@org.kie.api.definition.type.Label("Code client livré ")
 	private java.lang.String shipToCustomerId;
-	@org.kie.api.definition.type.Label(value = "Numéro d’affaire ")
+	@org.kie.api.definition.type.Label("Numéro d’affaire ")
 	private java.lang.String projectId;
+
+	@org.kie.api.definition.type.Label(value = "La quantité de tissu nécessaire ")
+	private java.lang.Integer optionQuantity;
 
 	public QuestionAnswerParam() {
 	}
@@ -124,13 +127,22 @@ public class QuestionAnswerParam implements java.io.Serializable {
 		this.projectId = projectId;
 	}
 
+	public java.lang.Integer getOptionQuantity() {
+		return this.optionQuantity;
+	}
+
+	public void setOptionQuantity(java.lang.Integer optionQuantity) {
+		this.optionQuantity = optionQuantity;
+	}
+
 	public QuestionAnswerParam(java.lang.String typeOfUse,
 			java.lang.String howToUse, java.lang.Integer debit,
 			java.lang.Integer numberOfUses, java.lang.Integer askedQuantity,
 			java.util.Date customerRequestDate, java.lang.Integer diameter,
 			java.lang.String salesContractId,
 			java.lang.String soldToCustomerId,
-			java.lang.String shipToCustomerId, java.lang.String projectId) {
+			java.lang.String shipToCustomerId, java.lang.String projectId,
+			java.lang.Integer optionQuantity) {
 		this.typeOfUse = typeOfUse;
 		this.howToUse = howToUse;
 		this.debit = debit;
@@ -142,6 +154,7 @@ public class QuestionAnswerParam implements java.io.Serializable {
 		this.soldToCustomerId = soldToCustomerId;
 		this.shipToCustomerId = shipToCustomerId;
 		this.projectId = projectId;
+		this.optionQuantity = optionQuantity;
 	}
 
 }
