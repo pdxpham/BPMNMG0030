@@ -1,0 +1,1 @@
+{"id":"61cf8f44-2e44-4ce5-9dc7-214623af1f76","name":"configurationSalesPrice_subform","model":{"source":"INTERNAL","className":"SubFormModel","name":"SubFormModel","properties":[],"formModelType":"org.kie.workbench.common.forms.data.modeller.model.DataObjectFormModel"},"fields":[],"layoutTemplate":{"version":3,"style":"FLUID","layoutProperties":{},"rows":[]}}
