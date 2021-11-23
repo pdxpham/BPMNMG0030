@@ -1,0 +1,1 @@
+{"id":"ec5ff3e8-46a1-4bdf-9a8b-1c4c130c7f0b","name":"newSalesOrder_subform","model":{"source":"INTERNAL","className":"SubFormModel","name":"SubFormModel","properties":[],"formModelType":"org.kie.workbench.common.forms.data.modeller.model.DataObjectFormModel"},"fields":[],"layoutTemplate":{"version":3,"style":"FLUID","layoutProperties":{},"rows":[]}}
