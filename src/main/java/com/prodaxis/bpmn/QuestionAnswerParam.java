@@ -62,10 +62,13 @@ public class QuestionAnswerParam implements java.io.Serializable {
 	@org.kie.api.definition.type.Label("Les caractéristiques techniques ont été créées")
 	private java.lang.String salesOrderLineDesignFeaturesCreated;
 
-	@org.kie.api.definition.type.Label(value = "Montant de la remise")
+	@org.kie.api.definition.type.Label("Montant de la remise")
 	private java.lang.Double discount;
-	@org.kie.api.definition.type.Label(value = "La marge prévisionnelle")
+	@org.kie.api.definition.type.Label("La marge prévisionnelle")
 	private java.lang.Double netMargin;
+
+	@org.kie.api.definition.type.Label(value = "Quantité article disponible")
+	private java.lang.Double availableQuantity;
 
 	public QuestionAnswerParam() {
 	}
@@ -272,6 +275,14 @@ public class QuestionAnswerParam implements java.io.Serializable {
 		this.netMargin = netMargin;
 	}
 
+	public java.lang.Double getAvailableQuantity() {
+		return this.availableQuantity;
+	}
+
+	public void setAvailableQuantity(java.lang.Double availableQuantity) {
+		this.availableQuantity = availableQuantity;
+	}
+
 	public QuestionAnswerParam(java.lang.String typeOfUse,
 			java.lang.String howToUse, java.lang.Integer debit,
 			java.lang.Integer numberOfUses, java.lang.Integer askedQuantity,
@@ -286,7 +297,8 @@ public class QuestionAnswerParam implements java.io.Serializable {
 			java.lang.String salesOrderId, java.lang.String salesOrderCreated,
 			java.lang.String salesOrderLinesCreated,
 			java.lang.String salesOrderLineDesignFeaturesCreated,
-			java.lang.Double discount, java.lang.Double netMargin) {
+			java.lang.Double discount, java.lang.Double netMargin,
+			java.lang.Double availableQuantity) {
 		this.typeOfUse = typeOfUse;
 		this.howToUse = howToUse;
 		this.debit = debit;
@@ -312,6 +324,7 @@ public class QuestionAnswerParam implements java.io.Serializable {
 		this.salesOrderLineDesignFeaturesCreated = salesOrderLineDesignFeaturesCreated;
 		this.discount = discount;
 		this.netMargin = netMargin;
+		this.availableQuantity = availableQuantity;
 	}
 
 }
