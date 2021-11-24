@@ -33,8 +33,19 @@ public class QuestionAnswerParam implements java.io.Serializable {
 	@org.kie.api.definition.type.Label("Numéro d’affaire ")
 	private java.lang.String projectId;
 
-	@org.kie.api.definition.type.Label(value = "La quantité de tissu nécessaire ")
+	@org.kie.api.definition.type.Label("La quantité de tissu nécessaire ")
 	private java.lang.Integer optionQuantity;
+
+	@org.kie.api.definition.type.Label(value = "Nouvelle offre")
+	private boolean newSalesOrder;
+	@org.kie.api.definition.type.Label(value = "Type de préfixe")
+	private java.lang.String prefixType;
+	@org.kie.api.definition.type.Label(value = "Identifiant de préfixe")
+	private java.lang.String prefixId;
+	@org.kie.api.definition.type.Label(value = "Conception caractéristique conservée")
+	private java.lang.Boolean designFeatureKept;
+	@org.kie.api.definition.type.Label(value = "Demande allouée")
+	private boolean allocatedDemand;
 
 	public QuestionAnswerParam() {
 	}
@@ -135,6 +146,46 @@ public class QuestionAnswerParam implements java.io.Serializable {
 		this.optionQuantity = optionQuantity;
 	}
 
+	public boolean isNewSalesOrder() {
+		return this.newSalesOrder;
+	}
+
+	public void setNewSalesOrder(boolean newSalesOrder) {
+		this.newSalesOrder = newSalesOrder;
+	}
+
+	public java.lang.String getPrefixType() {
+		return this.prefixType;
+	}
+
+	public void setPrefixType(java.lang.String prefixType) {
+		this.prefixType = prefixType;
+	}
+
+	public java.lang.String getPrefixId() {
+		return this.prefixId;
+	}
+
+	public void setPrefixId(java.lang.String prefixId) {
+		this.prefixId = prefixId;
+	}
+
+	public java.lang.Boolean getDesignFeatureKept() {
+		return this.designFeatureKept;
+	}
+
+	public void setDesignFeatureKept(java.lang.Boolean designFeatureKept) {
+		this.designFeatureKept = designFeatureKept;
+	}
+
+	public boolean isAllocatedDemand() {
+		return this.allocatedDemand;
+	}
+
+	public void setAllocatedDemand(boolean allocatedDemand) {
+		this.allocatedDemand = allocatedDemand;
+	}
+
 	public QuestionAnswerParam(java.lang.String typeOfUse,
 			java.lang.String howToUse, java.lang.Integer debit,
 			java.lang.Integer numberOfUses, java.lang.Integer askedQuantity,
@@ -142,7 +193,9 @@ public class QuestionAnswerParam implements java.io.Serializable {
 			java.lang.String salesContractId,
 			java.lang.String soldToCustomerId,
 			java.lang.String shipToCustomerId, java.lang.String projectId,
-			java.lang.Integer optionQuantity) {
+			java.lang.Integer optionQuantity, boolean newSalesOrder,
+			java.lang.String prefixType, java.lang.String prefixId,
+			java.lang.Boolean designFeatureKept, boolean allocatedDemand) {
 		this.typeOfUse = typeOfUse;
 		this.howToUse = howToUse;
 		this.debit = debit;
@@ -155,6 +208,11 @@ public class QuestionAnswerParam implements java.io.Serializable {
 		this.shipToCustomerId = shipToCustomerId;
 		this.projectId = projectId;
 		this.optionQuantity = optionQuantity;
+		this.newSalesOrder = newSalesOrder;
+		this.prefixType = prefixType;
+		this.prefixId = prefixId;
+		this.designFeatureKept = designFeatureKept;
+		this.allocatedDemand = allocatedDemand;
 	}
 
 }
