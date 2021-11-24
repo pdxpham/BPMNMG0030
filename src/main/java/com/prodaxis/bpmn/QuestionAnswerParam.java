@@ -52,8 +52,15 @@ public class QuestionAnswerParam implements java.io.Serializable {
 	@org.kie.api.definition.type.Label("État de la commande de vente")
 	private java.lang.Character salesOrderStatus;
 
-	@org.kie.api.definition.type.Label(value = "Commande de vente")
+	@org.kie.api.definition.type.Label("Commande de vente")
 	private java.lang.String salesOrderId;
+
+	@org.kie.api.definition.type.Label(value = "La commande a été créée ")
+	private java.lang.String salesOrderCreated;
+	@org.kie.api.definition.type.Label(value = "Les lignes d’offre suivantes ont été créées ")
+	private java.lang.String salesOrderLinesCreated;
+	@org.kie.api.definition.type.Label(value = "Les caractéristiques techniques ont été créées")
+	private java.lang.String salesOrderLineDesignFeaturesCreated;
 
 	public QuestionAnswerParam() {
 	}
@@ -218,6 +225,32 @@ public class QuestionAnswerParam implements java.io.Serializable {
 		this.salesOrderId = salesOrderId;
 	}
 
+	public java.lang.String getSalesOrderCreated() {
+		return this.salesOrderCreated;
+	}
+
+	public void setSalesOrderCreated(java.lang.String salesOrderCreated) {
+		this.salesOrderCreated = salesOrderCreated;
+	}
+
+	public java.lang.String getSalesOrderLinesCreated() {
+		return this.salesOrderLinesCreated;
+	}
+
+	public void setSalesOrderLinesCreated(
+			java.lang.String salesOrderLinesCreated) {
+		this.salesOrderLinesCreated = salesOrderLinesCreated;
+	}
+
+	public java.lang.String getSalesOrderLineDesignFeaturesCreated() {
+		return this.salesOrderLineDesignFeaturesCreated;
+	}
+
+	public void setSalesOrderLineDesignFeaturesCreated(
+			java.lang.String salesOrderLineDesignFeaturesCreated) {
+		this.salesOrderLineDesignFeaturesCreated = salesOrderLineDesignFeaturesCreated;
+	}
+
 	public QuestionAnswerParam(java.lang.String typeOfUse,
 			java.lang.String howToUse, java.lang.Integer debit,
 			java.lang.Integer numberOfUses, java.lang.Integer askedQuantity,
@@ -229,7 +262,9 @@ public class QuestionAnswerParam implements java.io.Serializable {
 			java.lang.String prefixType, java.lang.String prefixId,
 			java.lang.Boolean designFeatureKept, boolean allocatedDemand,
 			java.lang.String companyId, java.lang.Character salesOrderStatus,
-			java.lang.String salesOrderId) {
+			java.lang.String salesOrderId, java.lang.String salesOrderCreated,
+			java.lang.String salesOrderLinesCreated,
+			java.lang.String salesOrderLineDesignFeaturesCreated) {
 		this.typeOfUse = typeOfUse;
 		this.howToUse = howToUse;
 		this.debit = debit;
@@ -250,6 +285,9 @@ public class QuestionAnswerParam implements java.io.Serializable {
 		this.companyId = companyId;
 		this.salesOrderStatus = salesOrderStatus;
 		this.salesOrderId = salesOrderId;
+		this.salesOrderCreated = salesOrderCreated;
+		this.salesOrderLinesCreated = salesOrderLinesCreated;
+		this.salesOrderLineDesignFeaturesCreated = salesOrderLineDesignFeaturesCreated;
 	}
 
 }
