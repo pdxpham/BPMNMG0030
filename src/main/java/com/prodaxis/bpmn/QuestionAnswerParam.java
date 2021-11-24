@@ -47,10 +47,13 @@ public class QuestionAnswerParam implements java.io.Serializable {
 	@org.kie.api.definition.type.Label("Demande allouée")
 	private boolean allocatedDemand;
 
-	@org.kie.api.definition.type.Label(value = "Identifiant de société")
+	@org.kie.api.definition.type.Label("Identifiant de société")
 	private java.lang.String companyId;
-	@org.kie.api.definition.type.Label(value = "État de la commande de vente")
+	@org.kie.api.definition.type.Label("État de la commande de vente")
 	private java.lang.Character salesOrderStatus;
+
+	@org.kie.api.definition.type.Label(value = "Commande de vente")
+	private java.lang.String salesOrderId;
 
 	public QuestionAnswerParam() {
 	}
@@ -207,6 +210,14 @@ public class QuestionAnswerParam implements java.io.Serializable {
 		this.salesOrderStatus = salesOrderStatus;
 	}
 
+	public java.lang.String getSalesOrderId() {
+		return this.salesOrderId;
+	}
+
+	public void setSalesOrderId(java.lang.String salesOrderId) {
+		this.salesOrderId = salesOrderId;
+	}
+
 	public QuestionAnswerParam(java.lang.String typeOfUse,
 			java.lang.String howToUse, java.lang.Integer debit,
 			java.lang.Integer numberOfUses, java.lang.Integer askedQuantity,
@@ -217,7 +228,8 @@ public class QuestionAnswerParam implements java.io.Serializable {
 			java.lang.Integer optionQuantity, boolean newSalesOrder,
 			java.lang.String prefixType, java.lang.String prefixId,
 			java.lang.Boolean designFeatureKept, boolean allocatedDemand,
-			java.lang.String companyId, java.lang.Character salesOrderStatus) {
+			java.lang.String companyId, java.lang.Character salesOrderStatus,
+			java.lang.String salesOrderId) {
 		this.typeOfUse = typeOfUse;
 		this.howToUse = howToUse;
 		this.debit = debit;
@@ -237,6 +249,7 @@ public class QuestionAnswerParam implements java.io.Serializable {
 		this.allocatedDemand = allocatedDemand;
 		this.companyId = companyId;
 		this.salesOrderStatus = salesOrderStatus;
+		this.salesOrderId = salesOrderId;
 	}
 
 }
