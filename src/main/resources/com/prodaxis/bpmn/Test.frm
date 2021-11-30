@@ -1,0 +1,1 @@
+{"id":"d24e8dc4-551e-4a19-acbf-3c8e689ef50f","name":"Test","model":{"source":"INTERNAL","className":"SubFormModel","name":"SubFormModel","properties":[],"formModelType":"org.kie.workbench.common.forms.data.modeller.model.DataObjectFormModel"},"fields":[],"layoutTemplate":{"version":3,"style":"FLUID","layoutProperties":{},"rows":[]}}
