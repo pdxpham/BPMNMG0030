@@ -13,11 +13,11 @@ public class QuestionAnswerParam implements java.io.Serializable {
 	private java.lang.String typeOfUse;
 	@org.kie.api.definition.type.Label("Mode d’utilisation")
 	private java.lang.String howToUse;
-	@org.kie.api.definition.type.Label("Debit")
+	@org.kie.api.definition.type.Label("Débit")
 	private java.lang.Integer debit;
 	@org.kie.api.definition.type.Label("Nombre d’usages prévus par an ")
 	private java.lang.Integer numberOfUses;
-	@org.kie.api.definition.type.Label("La quantité de caissons nécessaires ")
+	@org.kie.api.definition.type.Label("Quantité souhaitée")
 	private java.lang.Integer askedQuantity;
 	@org.kie.api.definition.type.Label("Date demandée ")
 	private java.util.Date customerRequestDate;
@@ -33,29 +33,29 @@ public class QuestionAnswerParam implements java.io.Serializable {
 	@org.kie.api.definition.type.Label("Numéro d’affaire ")
 	private java.lang.String projectId;
 
-	@org.kie.api.definition.type.Label("La quantité de tissu nécessaire ")
+	@org.kie.api.definition.type.Label("Quantité de tissu nécessaire")
 	private java.lang.Integer optionQuantity;
 
 	@org.kie.api.definition.type.Label("Nouvelle offre")
 	private boolean newSalesOrder;
 	@org.kie.api.definition.type.Label("Type de préfixe")
 	private java.lang.String prefixType;
-	@org.kie.api.definition.type.Label("Identifiant de préfixe")
+	@org.kie.api.definition.type.Label("Identifiant du préfixe")
 	private java.lang.String prefixId;
-	@org.kie.api.definition.type.Label("Conception caractéristique conservée")
+	@org.kie.api.definition.type.Label("Récupération des caractéristiques techniques")
 	private java.lang.Boolean designFeatureKept;
-	@org.kie.api.definition.type.Label("Demande allouée")
+	@org.kie.api.definition.type.Label("Demande réservée")
 	private boolean allocatedDemand;
 
 	@org.kie.api.definition.type.Label("Identifiant de société")
 	private java.lang.String companyId;
-	@org.kie.api.definition.type.Label("État de la commande de vente")
+	@org.kie.api.definition.type.Label("Statut de l'offre")
 	private java.lang.Character salesOrderStatus;
 
-	@org.kie.api.definition.type.Label("Commande de vente")
+	@org.kie.api.definition.type.Label("Identifiant de l'offre")
 	private java.lang.String salesOrderId;
 
-	@org.kie.api.definition.type.Label("La commande a été créée ")
+	@org.kie.api.definition.type.Label("L'offre a été créée")
 	private java.lang.String salesOrderCreated;
 	@org.kie.api.definition.type.Label("Les lignes d’offre suivantes ont été créées ")
 	private java.lang.String salesOrderLinesCreated;
@@ -64,10 +64,10 @@ public class QuestionAnswerParam implements java.io.Serializable {
 
 	@org.kie.api.definition.type.Label("Montant de la remise")
 	private java.lang.Double discount;
-	@org.kie.api.definition.type.Label("La marge prévisionnelle")
+	@org.kie.api.definition.type.Label("Marge nette")
 	private java.lang.Double netMargin;
 
-	@org.kie.api.definition.type.Label(value = "Quantité article disponible")
+	@org.kie.api.definition.type.Label("Quantité en stock disponible")
 	private java.lang.Double availableQuantity;
 
 	public QuestionAnswerParam() {
